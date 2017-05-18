@@ -11,6 +11,8 @@ buildDeps="
     libedit-dev
     libjemalloc-dev
     libncurses-dev
+    git-core
+    autoconf
     libpcre3-dev
     libtool
     pkg-config
@@ -20,6 +22,11 @@ buildDeps="
     libvarnishapi-dev
     python3-dev
     python3-pip
+"
+
+bothDeps="
+  libmicrohttpd-dev
+  libcurl4-gnutls-dev
 "
 
 runDeps="
@@ -40,6 +47,7 @@ echo "Installing $buildDeps"
 echo "========================================================================="
 
 apt-get update
+apt-get install -y --no-install-recommends $bothDeps
 apt-get install -y --no-install-recommends $buildDeps
 
 
@@ -86,6 +94,17 @@ echo "Installing chaperone"
 echo "========================================================================="
 
 pip3 install chaperone
+
+echo "========================================================================="
+echo "Installing Varnish Agent"
+echo "========================================================================="
+
+git clone https://github.com/varnish/vagent2
+cd vagent2
+sh ./autogen.sh
+./configure
+make
+make install
 
 
 echo "========================================================================="
