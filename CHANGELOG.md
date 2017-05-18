@@ -1,3 +1,11 @@
+agent.service: {
+  service_groups: IDLE,
+  command: "varnish-agent -K /etc/varnish/conf.d/secret",
+  stdout: inherit,
+  stderr: inherit,
+  after: varnish.service,
+}
+
 # Changelog
 
 
