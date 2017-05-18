@@ -1,7 +1,6 @@
 # Varnish Docker image
 
-Varnish docker image with support for dynamic backends, Rancher DNS, auto-configure
-and reload.
+Varnish docker image with support for dynamic backends, Rancher DNS, auto-configure, reload and Varnish Agent.
 
 This image is generic, thus you can obviously re-use it within
 your non-related EEA projects.
@@ -13,25 +12,25 @@ your non-related EEA projects.
 
 ## Supported tags and respective Dockerfile links
 
-  - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.varnish/blob/master/varnish/Dockerfile) (Debian Jessie, Varnish 4.1)
+  - `:latest` [*Dockerfile*](https://github.com/herlon214/eea.docker.varnish/blob/master/varnish/Dockerfile) (Debian Jessie, Varnish 4.1)
 
 ### Stable and immutable tags
 
-  - `:4.1-2.0` [*Dockerfile*](https://github.com/eea/eea.docker.varnish/tree/4.1-1.0/varnish/Dockerfile) - Varnish: **4.1** Release: **2.0**
+  - `:4.1-2.0` [*Dockerfile*](https://github.com/herlon214/eea.docker.varnish/tree/4.1-1.0/varnish/Dockerfile) - Varnish: **4.1** Release: **2.0**
 
-See [older versions](https://github.com/eea/eea.docker.varnish/releases)
+See [older versions](https://github.com/herlon214/eea.docker.varnish/releases)
 
 ### Changes
 
- - [CHANGELOG.md](https://github.com/eea/eea.docker.varnish/blob/master/CHANGELOG.md)
+ - [CHANGELOG.md](https://github.com/herlon214/eea.docker.varnish/blob/master/CHANGELOG.md)
 
 ## Base docker image
 
- - [hub.docker.com](https://registry.hub.docker.com/u/eeacms/varnish)
+ - [hub.docker.com](https://hub.docker.com/r/herlon214/varnish/)
 
 ## Source code
 
-  - [github.com](http://github.com/eea/eea.docker.varnish)
+  - [github.com](https://github.com/herlon214/eea.docker.varnish)
 
 
 ## Installation
