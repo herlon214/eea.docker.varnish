@@ -9,6 +9,7 @@ your non-related EEA projects.
  - Debian Jessie
  - Varnish **4.1**
  - EXPOSE **6081**
+ - EXPOSE **6085**
 
 ## Supported tags and respective Dockerfile links
 
