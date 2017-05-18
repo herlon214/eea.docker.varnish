@@ -105,6 +105,7 @@ sh ./autogen.sh
 ./configure
 make
 make install
+echo "admin:admin" >> /etc/varnish/conf.d/secret
 
 
 echo "========================================================================="
