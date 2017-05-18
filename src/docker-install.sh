@@ -141,3 +141,9 @@ mv -v /tmp/track_hosts.sh     /track_hosts
 mv -v /tmp/track_dns.sh       /track_dns
 mv -v /tmp/reload.sh          /usr/bin/reload
 mv -v /tmp/default.vcl        /etc/varnish/default.vcl
+chmod +x /assemble_vcls.py
+chmod +x /add_backends.py
+chmod +x /docker-setup.sh
+chmod +x /track_dns
+chmod +x /usr/bin/reload
+chmod +x /track_hosts
